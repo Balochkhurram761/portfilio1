@@ -1,0 +1,98 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.section6 {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #0003;
+    color: #c4cfde;
+    margin: 20px 0px;
+    max-width: 800px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section6 h1{
+    color: red;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+}
+
+.form .inputs{
+display: flex;
+gap: 50px;
+}
+
+.form .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.form .input input{
+    padding: 10px ;
+    background-color: #2C2F35;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+.form .input textarea{
+    padding: 10px ;
+    background-color: #2C2F35;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 200px;
+}
+.form .input label{
+    color: rgb(196, 207, 222);
+    font-family: Montserrat, serif;
+    font-size: 18px;
+}
+
+.form button{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #1F2125;
+    color: red;
+    text-align: center;
+    padding: 7px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #1F2125;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+.animate__animated.animate__backInDown {
+    animation-duration: 0.2s;
+  }
+@media only screen and (max-width: 990px) {
+ .container{
+    width: 90%;
+ }
+}
+@media only screen and (max-width: 660px) {
+    .container{
+       width: 95%;
+    }
+   }
+   @media only screen and (max-width: 634px) {
+    
+    .form .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+    
+   }

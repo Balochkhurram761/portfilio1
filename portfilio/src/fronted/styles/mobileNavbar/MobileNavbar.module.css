@@ -1,0 +1,62 @@
+.navmobile {
+    background-color: #212428;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    display: none;
+    transition: top 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: -100%;
+
+}
+.navmobile ul {
+    list-style: none;
+     display: flex;
+    align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     padding: 10px 40px;
+}
+.navmobile.active{
+  top:80px;
+}
+
+
+
+.navmobile ul li a {
+    
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navmobile button{
+    color: #ff014f;
+    font-weight: 600;
+    cursor: pointer;
+  border: 1px solid #212428;
+  background: linear-gradient(145deg, #23272b, #1e2024);
+  box-shadow: 0 4px 10px #0000004d;
+  outline: none;
+  padding: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition:transform .2s ease-in-out;
+
+}
+.navmobile button:hover{
+transform: translateY(-10px);
+
+}
+.animate__animated.animate__backInDown {
+    animation-duration: 0.2s;
+  }
+  .animate__animated.animate__backOutUp{
+    animation-duration: 0.2s;
+  }
+@media only screen and (max-width: 912px) {
+    .navmobile {
+        display: block;
+    }
+
+}

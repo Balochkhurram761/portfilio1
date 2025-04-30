@@ -1,0 +1,102 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.section2{
+padding: 50px 0px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-gap: 70px;
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.section2 img:hover{
+    transform: scale(1.1);
+    
+}
+.section2 .info{
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.section2 .info h1 span{
+    color: red;
+}
+.section2 .info p{
+    font-family: Montserrat, serif;
+    color: rgb(196, 207, 222)
+
+}
+.section2 button {
+    width: 150px;
+    background: linear-gradient(145deg, #23272b, #1e2024);
+    box-shadow: 0 4px 10px #0000004d;
+    border: 1px solid  #23272b;
+    padding: 10px;
+    color: red;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px); /* Start off-screen */
+    transition: all 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slide into view */
+}
+
+.animate__animated .animate__backInLeft {
+    animation-duration: 0.5s;
+}
+
+/* .animate__animated .animate__backInLeft{
+    animation-duration: 0.5s;
+} */
+@media only screen and (max-width:1229px) {
+    .container{
+        width: 1100px;
+        margin: 0 auto;
+       
+    }
+}
+@media only screen and (max-width:1129px) {
+    .container{
+        width: 1000px;
+        margin: 0 auto;
+       
+    }
+}
+@media only screen and (max-width:1063px) {
+    .container{
+        width: 900px;
+        margin: 0 auto;
+       
+    }
+}
+@media only screen and (max-width:925px) {
+    .container{
+       width:94%;
+       
+    }
+    .section2{
+
+        grid-template-columns: repeat(1,1fr);
+        
+        }
+}

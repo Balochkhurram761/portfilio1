@@ -1,0 +1,101 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.section5{
+    padding: 30px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body h3{
+    color: red;
+    font-family: Montserrat, serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.body h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+
+}
+
+.cards img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+
+}
+.card a{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #0003;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 20px;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.card a:hover{
+    transform: scale(1.1);
+    color: red;
+}
+.card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+@media only screen and (max-width: 1246px) {
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .cardbody h1{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 942px) {
+    .cardbody h1{
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 712px) {
+    .cardbody h1{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 638px) {
+    .container{
+        width: 100%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    
+    }
+    .cardbody h1{
+        font-size: 20px;
+    }
+}

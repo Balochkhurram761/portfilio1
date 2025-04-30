@@ -1,0 +1,21 @@
+
+
+
+const coder={
+    name:'Khurram Ali Khan',
+    Skills:[
+        'ReactJs','NextJs','Redux','Express','NodeJs',
+        'MongoDB','Tailwind'
+    ],
+    hardworker:true,
+    quickLearner:true,
+    problemSolver:true,
+    hireable:function(){
+        return(
+            this.hardworker &&
+            this.problemSolver && 
+            this.Skills.length>=5
+        )
+    }
+
+}
